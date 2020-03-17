@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+  width: 1200px;
+  margin: auto;
+}
+p{
+  color: #ffffff;
+  font-family: "exo-light";
+  margin: 10px;
+}
+h2{
+  color: green;
+  font-family: "exo-light";
+
+}
+.home-content{
+  h1,p{
+    color: #ffffff;
+    font-family: "exo-light";
+  }
+  .randomQuote{
+    width: 130px;
+    height: 30px;
+    background:none;
+    border: 2px solid green;
+    color: green;
+  }
+  i{
+    display: flex;
+ 
+  }
+}
+.logo{
+  width: 600px;
+  text-align: center;
+  
+}
+
+// i::before {
+//     content: '\f10d';
+//     font-family: 'FontAwesome';
+//     font-weight: 900;
+//     font-size: 125px;
+//     color: blue;
+//   }
+  
+//   i::after {
+//     content: '\f10e';
+//     font-family: 'FontAwesome';
+//     font-weight: 900;
+//     font-size: 125px;
+//     color: blue;
+//   }
+.menu ul{
+  display: flex;
+  justify-content: end;
+
+    a{
+
+  color: green;
+      margin: 10px;
+      font-family: "exo-light";
+      text-decoration: none;
+    }
+}
+.about-page{
+  p{
+    color: #ffffff;
+    font-family: "exo-light";
+    margin: 10px;
+  }
+  a{
+    color: green;
+    text-decoration: none;
+  }
+}
+.icon{
+  display: flex;
+  i{
+    color: green;
+  }
+}
