@@ -43,7 +43,7 @@ get_header(); ?>
 				<!-- end archive authors -->
 
 			
-    //categories
+    
     <h2>Categories</h2>
     <?php
         $categories = get_categories( array( 
@@ -62,9 +62,27 @@ get_header(); ?>
 				  </li><?php
 				} ?>
 				</ul>
-							
+                <h2>Tags</h2>
+    <?php
+        $tags = get_tags( array( 
+					'orderby' => 'name',
+					'order' => 'ASC',
+					'posts_per_page' => -1,
+				));?>
+
+				<ul class="archive-list">
+				<?php
+        foreach( $tags as $tag ) {
+					$tagLink= home_url('/tag/'). $tag->slug;?>
+					
+					<li>
+						<a href =<?php echo "$tagLink" ?> class ="button"><?php echo $tag->name ?></a>
+				  </li><?php
+				} ?>
+				</ul>		
 
 			<?php endif; ?>
+            
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
