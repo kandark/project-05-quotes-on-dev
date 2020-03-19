@@ -20,7 +20,8 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 
-				<!-- start archive authors -->
+                <!-- start archive authors -->
+                <i class="fas fa-quote-left"></i>
 				<h2>Quote Authors</h2>
         <?php
         $posts = get_posts( array( 
@@ -80,6 +81,7 @@ get_header(); ?>
 				  </li><?php
 				} ?>
 				</ul>		
+                <i class="fas fa-quote-right"></i>
 
 			<?php endif; ?>
             

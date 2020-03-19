@@ -7,6 +7,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inhabitant
 */
+
 @font-face {
   font-family: "exo-light";
   src: url("./fonts/exo-light-webfont.ttf"); }
@@ -70,65 +71,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-color: black;
-  width: 1200px;
-  margin: auto; }
-
-p {
-  color: #ffffff;
-  font-family: "exo-light";
-  margin: 10px; }
-
-h2 {
-  color: green;
-  font-family: "exo-light"; }
-
-.home-content h1, .home-content p {
-  color: #ffffff;
-  font-family: "exo-light"; }
-
-.home-content .randomQuote {
-  width: 130px;
-  height: 30px;
-  background: none;
-  border: 2px solid green;
-  color: green; }
-
-.home-content i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.logo {
-  width: 600px;
-  text-align: center; }
-
-.menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end; }
-  .menu ul a {
-    color: green;
-    margin: 10px;
+  .about-page{
     font-family: "exo-light";
-    text-decoration: none; }
-
-.about-page p {
-  color: #ffffff;
-  font-family: "exo-light";
-  margin: 10px; }
-
-.about-page a {
-  color: green;
-  text-decoration: none; }
-
-.icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .icon i {
-    color: green; }
+  }

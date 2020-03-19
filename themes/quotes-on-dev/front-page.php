@@ -6,7 +6,8 @@
 <i class="fas fa-quote-left"></i>
     
 
-
+<h2><?php echo get_the_title();?></h2>
+<p><?php echo the_content();?></p>
 
 
 <h1 class="the-quote"></h1>  

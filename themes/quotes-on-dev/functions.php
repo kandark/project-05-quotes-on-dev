@@ -57,10 +57,12 @@ add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function qod_scripts() {
-    wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+    wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
+	
     
-	// wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
-	// wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
@@ -83,6 +85,11 @@ require get_template_directory() . '/inc/metaboxes.php';
  * Custom WP API modifications.
  */
 require get_template_directory() . '/inc/api.php';
+add_action( 'wp_enqueue_scripts', 'tthq_add_custom_fa_css' );
+
+function tthq_add_custom_fa_css() {
+wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
+}
 function red_scripts() {
     $script_url = get_template_directory_uri() . '/js/api.js';
     wp_enqueue_script( 'jquery' );

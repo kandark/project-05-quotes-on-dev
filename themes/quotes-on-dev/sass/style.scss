@@ -7,22 +7,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: inhabitant
 */
-@font-face {
-    font-family: "exo-light";
-    src: url("./fonts/exo-light-webfont.ttf"); }
-  
-  @font-face {
-    font-family: "exo-light-italic";
-    src: url("/fonts/exo-lightitalic-webfont.ttf"); }
-
-@font-face{
-    font-family: "exo-medium";
-    src: url("/fonts/exo-medium-webfont.ttf");
-}
-@font-face{
-    font-family: "medium-italic";
-    src: url("/fonts/exo-mediumitalic-webfont.ttf");
-}
 
 @import 'abstracts/variables';
 @import 'abstracts/functions';

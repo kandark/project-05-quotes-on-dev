@@ -80,3 +80,38 @@ h2{
     color: green;
   }
 }
+/***** submit a quote ****/
+.form-submit-a-quote{
+  p{
+    color: #ffffff;
+  }
+  input{
+    background: none;
+    width: 200px;
+    height: 20px;
+    border: 2px solid green;
+  }
+  textarea{
+    width: 400px;
+    height: 70px;
+    background: none;
+    border: 2px solid green;
+  }
+  button{
+    background: none;
+    color: green;
+    width: 100px;
+    height: 30px;
+    border: 2px solid green;
+  }
+
+}
+/*** archive list ****/
+
+.archive-list {
+ li .button{
+   color: green;
+   font-family: "exo-light";
+
+ }
+}
